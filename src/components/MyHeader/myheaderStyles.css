@@ -1,0 +1,18 @@
+
+i {
+    color: white;
+    font-size: 1.3rem;
+}
+
+span {
+    font-weight: 800;
+}
+
+.whitemode:hover {
+    transform: scale(1.2);
+
+}
+
+.whitemode {
+    transition: all ease .3s;
+}

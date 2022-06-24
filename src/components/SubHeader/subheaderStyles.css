@@ -1,0 +1,16 @@
+img {
+    border-radius: 50%;
+    width: 10rem;
+}
+
+.bio p {
+    text-align: center;
+}
+
+.social h3 {
+    color: var(--contrast);
+}
+
+.social a {
+    text-decoration: none;
+}
