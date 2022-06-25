@@ -1,0 +1,42 @@
+.postTitle h1 {
+  color: white;
+  text-align: center;
+}
+
+.postTitle h2 {
+  color: gray;
+}
+
+.postInfo h3 {
+  color: purple;
+}
+
+.postInfo h4 {
+  color: yellow;
+}
+
+.postInfo h5 {
+  color: gray;
+}
+
+.postContent p {
+  color: white;
+}
+
+.postInfo p {
+  color: white;
+}
+
+.keywords p {
+  color: rgb(56, 56, 56);
+}
+
+.postContent p {
+  text-align: left;
+  font-size: 2rem;
+}
+
+.postTitle h1 {
+  font-size: 3.3rem;
+}
+

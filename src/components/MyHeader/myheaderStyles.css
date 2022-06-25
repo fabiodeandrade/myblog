@@ -16,3 +16,7 @@ span {
 .whitemode {
     transition: all ease .3s;
 }
+
+header a {
+    text-decoration: none;
+}

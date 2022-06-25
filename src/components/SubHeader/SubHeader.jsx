@@ -4,7 +4,7 @@ import marlonPic from "../../assets/bio.jpg";
 export const SubHeader = () => {
   return (
     <div className="subHeader flex flex-column align-items-center justify-content-center w-100 gap-3">
-      <div className="bio flex flex-column align-items-center justify-content-center gap-3 px-5">
+      <div className="bio flex flex-column align-items-center justify-content-center gap-3 px-8">
         <img src={marlonPic} alt="aqui vai a foto principal" />
         <p style={{ color: "white" }}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -14,16 +14,16 @@ export const SubHeader = () => {
       </div>
       <div className="social flex gap-4 p-3">
         <a href="https://www.linkedin.com/in/fabiodeandrad/">
-          <h3>LinkedIn</h3>
+          <h3 style={{color: "yellow"}}>LinkedIn</h3>
         </a>
         <a href="https://www.linkedin.com/in/fabiodeandrad/">
           <h3>GitHub</h3>
         </a>
         <a href="https://www.linkedin.com/in/fabiodeandrad/">
-          <h3>Instagram</h3>
+          <h3 style={{color: "purple"}}>Instagram</h3>
         </a>
         <a href="https://www.linkedin.com/in/fabiodeandrad/">
-          <h3>CodeWars</h3>
+          <h3 style={{color: "salmon"}}>CodeWars</h3>
         </a>
       </div>
     </div>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./postsstyles.css";
 import { Api } from "../../services/api";
 import { Loading } from "../Loading/Loading";
+import { Link } from "react-router-dom";
 
 export const Posts = () => {
   const [myPosts, setMyPosts] = useState([]);
@@ -11,7 +12,7 @@ export const Posts = () => {
     setLoading(true);
     try {
       const { data } = await Api.get(
-        "https://n0a7y6cp.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22blog%22%5D"
+        "v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22blog%22%5D"
       );
       setMyPosts(data.result);
       setLoading(false);
@@ -21,17 +22,26 @@ export const Posts = () => {
     }
   };
 
-  console.log(myPosts);
-
   useEffect(() => {
     gettingPosts();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="blogArea flex align-items-center justify-content-center">
+    <div className="blogArea flex-column flex align-items-center justify-content-center">
       {loading && <Loading />}
-      <h1>Sou o comp de blogs</h1>
+      <h1>📝 Blog</h1>
+      {myPosts.map(({ title, _id, subtitle, content, url }) => (
+        <div
+          key={_id}
+          className="blogPost flex flex-column align-items-center justify-content-center my-2"
+        >
+          <Link to={`posts/${url}`}>
+            <h2>{title}</h2>
+          </Link>
+          <h4>{subtitle}</h4>
+        </div>
+      ))}
     </div>
   );
 };

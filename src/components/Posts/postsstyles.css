@@ -1,3 +1,13 @@
 h1 {
     color: var(--contrast);
 }
+
+
+.blogPost h2 {
+    color: var(--contrast);
+    
+}
+
+.blogArea a {
+    text-decoration: none;
+}
